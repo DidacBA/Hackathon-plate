@@ -73,13 +73,13 @@ body {
 
 
 .first-section {
-  background-image: url("https://media2.s-nbcnews.com/j/newscms/2017_07/1906431/170217-exoskeleton-mn-1810_4dd2c55b55e6a2f68a53ba767777cf04.fit-760w.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-columns: 50% auto;
   grid-template-rows: 25% auto 25%;
+  background-color: white;
 }
 
 .second-section {
@@ -101,12 +101,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+.section1-image{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-image: url("assets/images/170217-exoskeleton-mn-1810_4dd2c55b55e6a2f68a53ba767777cf04.fit-2000w.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .button {
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 10px;
   font-size: 2rem;
-  background-color: white;
+  background-color: grey;
 }
 
 .button:hover {
@@ -119,7 +128,7 @@ body {
   width:100%;
   height: 66%;
   background-color: #00A1FF;
-  background-image: url("https://www.roboticsbusinessreview.com/wp-content/uploads/2018/01/exosuit-exoskeleton-cyberdyne-hybrid-assistive-limb-hulc-robot-machine-1000x500.jpg");
+  background-image: url("assets/images/turin landscape.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,7 +137,7 @@ body {
 .login-back-down {
   width:100%;
   height:34%;
-  background-color: #F9BA00;
+  background-color: whitesmoke;
 }
 
 .article {

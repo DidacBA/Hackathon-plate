@@ -4,7 +4,7 @@
 
 ## How to use
 
-- Fork to your github account
+- Project Start!
 - Use this file to describe your project, plan, take notes, todos, etc...
 - Have fun
 

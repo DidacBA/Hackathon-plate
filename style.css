@@ -71,9 +71,6 @@ body {
   padding: 0;
 }
 
-.second-section {
-  background-color: grey;
-}
 
 .first-section {
   background-image: url("https://media2.s-nbcnews.com/j/newscms/2017_07/1906431/170217-exoskeleton-mn-1810_4dd2c55b55e6a2f68a53ba767777cf04.fit-760w.jpg");
@@ -85,18 +82,35 @@ body {
   grid-template-rows: 25% auto 25%;
 }
 
+.second-section {
+  background-color: grey;
+}
+
+.third-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-div {
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 2;
   width: 80%;
   justify-self: center;
+  display: flex;
+  flex-direction: column;
 }
 
-button {
+.button {
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 10px;
   font-size: 2rem;
+  background-color: white;
+}
+
+.button:hover {
+  background-color: grey;
 }
 
 /* ---- css shame ---- */
@@ -171,3 +185,8 @@ button {
   padding: 1vh;
   text-align: center; 
 }
+
+.input-form input {
+  padding: 1rem;
+}
+

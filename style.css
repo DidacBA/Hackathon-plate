@@ -10,6 +10,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: pink;
 }
 
 
@@ -22,12 +23,13 @@ body {
 
 .nav-bar {
   position: fixed;
-  padding: 1rem 0 1rem 0;
   width: 100%;
+  height: 61px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  background-color: green;
+  background-color: rgb(255, 255, 255, 0.2);
+  z-index: 1000;
 }
 
 .nav-links-container ul {
@@ -47,6 +49,10 @@ body {
 .nav-links-container ul li a {
   text-decoration: none;
   color: black;
+}
+
+.nav-links-container ul li a:hover {
+  color: darkmagenta;
 }
 
 /* ---- footer ---- */
@@ -69,12 +75,41 @@ body {
   background-color: grey;
 }
 
+.first-section {
+  background-image: url("https://media2.s-nbcnews.com/j/newscms/2017_07/1906431/170217-exoskeleton-mn-1810_4dd2c55b55e6a2f68a53ba767777cf04.fit-760w.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 25% auto 25%;
+}
+
+.section-div {
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  width: 80%;
+  justify-self: center;
+}
+
+button {
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
 /* ---- css shame ---- */
 
 .login-back-up {
   width:100%;
   height: 66%;
   background-color: #00A1FF;
+  background-image: url("https://www.roboticsbusinessreview.com/wp-content/uploads/2018/01/exosuit-exoskeleton-cyberdyne-hybrid-assistive-limb-hulc-robot-machine-1000x500.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .login-back-down {
   width:100%;
@@ -86,29 +121,53 @@ body {
   height: 0px;
 }
 
-
-.card {
-  width: 20%;
-  background-color: #4CAF50; /* this is some version of green*/
-  text-decoration: none; /* this is to remove underlining*/
-  color: white; /* text color is white*/
-  padding: 10px 10px; /* this adds (green) space around text */
-  margin: 0; /* this adds space around buttons */
-}
 .container-card {
   height: 0px;
-  /* this is to align buttons in center */
   display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
+  justify-content: center; 
+  align-items: center; 
   width: 100%;
   flex-direction: row;
 }
 .login-back-up, .login-back-down{
-  /* this is to align text in center,
-  you don't have to use if you dont need
-  text centered inside div */
   display: flex; 
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
+  justify-content: center;
+  align-items: center; 
+}
+
+.card-wrapper{
+  width: 80vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card{
+	width: 300px;
+  height: 500px;
+  background-color: grey;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.card:last-child {
+  margin-left: 4rem;
+}
+
+.card-image{
+  background-image: url("https://es.ubergizmo.com/wp-content/uploads/2016/05/exoesqueleto.jpg");
+  position: relative;
+  height: 60%;
+  background-position: center; 
+}
+
+.card-text{
+  max-width: 100%;
+  padding: 1vh;
+  text-align: center; 
 }

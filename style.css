@@ -18,23 +18,6 @@ body {
 
 /* ---- layout ---- */
 
-
-.container {
-  margin: 0 20px;
-}
-
-.section {
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 728px;
-    margin: 0 auto;
-  }
-}
-
 /* ---- header ---- */
 
 .nav-bar {
@@ -78,6 +61,8 @@ body {
 .section {
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 .second-section {
@@ -86,3 +71,44 @@ body {
 
 /* ---- css shame ---- */
 
+.login-back-up {
+  width:100%;
+  height: 66%;
+  background-color: #00A1FF;
+}
+.login-back-down {
+  width:100%;
+  height:34%;
+  background-color: #F9BA00;
+}
+
+.article {
+  height: 0px;
+}
+
+
+.card {
+  width: 20%;
+  background-color: #4CAF50; /* this is some version of green*/
+  text-decoration: none; /* this is to remove underlining*/
+  color: white; /* text color is white*/
+  padding: 10px 10px; /* this adds (green) space around text */
+  margin: 0; /* this adds space around buttons */
+}
+.container-card {
+  height: 0px;
+  /* this is to align buttons in center */
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  width: 100%;
+  flex-direction: row;
+}
+.login-back-up, .login-back-down{
+  /* this is to align text in center,
+  you don't have to use if you dont need
+  text centered inside div */
+  display: flex; 
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
